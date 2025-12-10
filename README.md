@@ -1,0 +1,2 @@
+# the-meta-agent-system
+This project demonstrates a Product Development Team composed of AI agents. Instead of manually writing code for every new idea, you act as the Product Manager by specifying what you want (e.g., "I want a shopping agent"). The AI team then autonomously handles the design, coding, and deployment of the requested product, streamlining the development process and enabling rapid prototyping and iteration .
