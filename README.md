@@ -3,6 +3,68 @@
 > **Build AI Agent Systems with AI, not code.**
 >
 > A meta-agent system that uses multiple specialized AI agents to automatically design and generate multi-agent systems.
+## 📚 Documentation
+
+**Main Documentation:**
+- [📖 README (This File)](#) - Quick start and overview
+- [🔵 Google ADK Version - Detailed Guide](./docs/GOOGLE_ADK_VERSION.md) - In-depth Google ADK implementation
+- [🔗 LangChain Version - Detailed Guide](./docs/LANGCHAIN_VERSION.md) - In-depth LangChain implementation
+
+**Quick Navigation:**
+- [Problem Statement](#-problem-statement)
+- [What This System Can Do](#-what-this-system-can-do)
+- [Architecture & Technology](#️-how-we-build-it---the-architecture)
+- [Quick Start](#-quick-start)
+- [Skills & Technologies](#-skills--technologies-used)
+- [Usage Examples](#-usage-examples)
+
+---
+
+## 🎯 Skills & Technologies Used
+
+### 🧠 AI & Machine Learning
+- **Large Language Models (LLMs)**: Google Gemini, OpenAI GPT-4o
+- **Prompt Engineering**: Advanced prompt design and optimization
+- **Multi-Agent Systems**: Agent orchestration and coordination
+- **Agentic AI**: Autonomous agent design patterns
+
+### 💻 Frameworks & Libraries
+- **Google Agent Development Kit (ADK)**: Production-ready agent framework
+- **LangChain**: LLM application framework and tooling
+- **LangGraph**: Stateful agent workflow orchestration
+- **Pydantic**: Data validation and type safety
+
+### 🐍 Python Development
+- **Async Programming**: `asyncio`, `aiosqlite` for concurrent operations
+- **Dynamic Code Execution**: `importlib` for runtime module loading
+- **Type Hints**: Advanced typing with `TypedDict`, generics
+- **Environment Management**: `python-dotenv` for configuration
+
+### 🏗️ Software Architecture
+- **Design Patterns**: Strategy, Factory, Observer patterns
+- **Separation of Concerns**: Modular, single-responsibility components
+- **Human-in-the-Loop (HITL)**: Interactive AI systems with verification
+- **State Management**: Stateful workflow design
+
+### 🔄 Development Practices
+- **Jupyter Notebooks**: Interactive development and documentation
+- **Version Control**: Git workflow and collaborative development
+- **Code Generation**: Automated Python code synthesis
+- **Testing & Validation**: Syntax validation, error handling
+
+### 📊 Data & Storage
+- **JSON Schema Design**: Blueprint structure and validation
+- **File System Management**: Persistent storage strategies
+- **SQLAlchemy**: (Optional) Database integration
+
+### 🔐 Security & Best Practices
+- **API Key Management**: Secure credential handling
+- **Environment Variables**: Configuration separation
+- **Input Validation**: Sanitization and error checking
+- **Code Safety**: Sandboxed execution patterns
+
+---
+
 
 ### Key Capabilities at a Glance
 
@@ -529,6 +591,49 @@ the-meta-agent-system/
 
 ## 🔧 Advanced Usage
 
+## 📚 Implementation Versions
+
+This project includes **two complete implementations** of the same meta-agent factory concept:
+
+### 🔵 [Google ADK Version](./docs/GOOGLE_ADK_VERSION.md)
+**File:** `src/root.ipynb`
+
+**Features:**
+- Production-ready Google Agent Development Kit
+- Google Gemini API integration
+- Sequential and Parallel flow support
+- Native ADK state management
+- Dynamic code execution
+
+**Best For:**
+- Production deployments
+- Google Cloud integration
+- Type-safe agent definitions
+- Enterprise applications
+
+**📖 [View Detailed Documentation →](./docs/GOOGLE_ADK_VERSION.md)**
+
+### 🔗 [LangChain Version](./docs/LANGCHAIN_VERSION.md)
+**File:** `src/root_LangChain_version.ipynb`
+
+**Features:**
+- LangChain + LangGraph framework
+- OpenAI GPT-4o integration
+- StateGraph workflow management
+- Extensive tool ecosystem
+- Multi-provider support
+
+**Best For:**
+- Research and experimentation
+- Multi-LLM support (OpenAI, Anthropic, etc.)
+- Complex workflow patterns
+- LangChain ecosystem integration
+
+**📖 [View Detailed Documentation →](./docs/LANGCHAIN_VERSION.md)**
+
+---
+
+## 🔧 Advanced Usage
 ### Customize Agent Behavior
 
 Edit agent instructions in the notebook:
@@ -698,10 +803,22 @@ Total: 5-10 minutes per agent
 
 ## 📖 References
 
+### Official Documentation
 - [Google Agent Development Kit (ADK)](https://github.com/google/generative-ai-python)
 - [Google Gemini API](https://ai.google.dev)
+- [LangChain Documentation](https://python.langchain.com/)
+- [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
+- [OpenAI API Documentation](https://platform.openai.com/docs)
+
+### Learning Resources
 - [Multi-Agent Systems](https://en.wikipedia.org/wiki/Multi-agent_system)
 - [Prompt Engineering Best Practices](https://platform.openai.com/docs/guides/prompt-engineering)
+- [State Management in LangGraph](https://langchain-ai.github.io/langgraph/concepts/state/)
+- [Agent Design Patterns](https://python.langchain.com/docs/modules/agents/)
+
+### Project-Specific Documentation
+- [🔵 Google ADK Version - Detailed Implementation Guide](./docs/GOOGLE_ADK_VERSION.md)
+- [🔗 LangChain Version - Detailed Implementation Guide](./docs/LANGCHAIN_VERSION.md)
 
 ---
 
