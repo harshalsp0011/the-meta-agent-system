@@ -1,4 +1,4 @@
-# 🏭 The Meta Agent Factory System
+# The Meta Agent Factory System
 
 > **Build AI Agent Systems with AI, not code.**
 >
@@ -8,7 +8,7 @@
 **Main Documentation:**
 - [📖 README (This File)](#) - Quick start and overview
 - [🔵 Google ADK Version - Detailed Guide](./docs/GOOGLE_ADK_VERSION.md) - In-depth Google ADK implementation
-- [🔗 LangChain Version - Detailed Guide](./docs/LANGCHAIN_VERSION.md) - In-depth LangChain implementation
+- [ LangChain Version - Detailed Guide](./docs/LANGCHAIN_VERSION.md) - In-depth LangChain implementation
 
 **Quick Navigation:**
 - [Problem Statement](#-problem-statement)
@@ -20,9 +20,9 @@
 
 ---
 
-## 🎯 Skills & Technologies Used
+## Skills & Technologies Used
 
-### 🧠 AI & Machine Learning
+### AI & Machine Learning
 - **Large Language Models (LLMs)**: Google Gemini, OpenAI GPT-4o
 - **Prompt Engineering**: Advanced prompt design and optimization
 - **Multi-Agent Systems**: Agent orchestration and coordination
@@ -34,30 +34,30 @@
 - **LangGraph**: Stateful agent workflow orchestration
 - **Pydantic**: Data validation and type safety
 
-### 🐍 Python Development
+### Python Development
 - **Async Programming**: `asyncio`, `aiosqlite` for concurrent operations
 - **Dynamic Code Execution**: `importlib` for runtime module loading
 - **Type Hints**: Advanced typing with `TypedDict`, generics
 - **Environment Management**: `python-dotenv` for configuration
 
-### 🏗️ Software Architecture
+### Software Architecture
 - **Design Patterns**: Strategy, Factory, Observer patterns
 - **Separation of Concerns**: Modular, single-responsibility components
 - **Human-in-the-Loop (HITL)**: Interactive AI systems with verification
 - **State Management**: Stateful workflow design
 
-### 🔄 Development Practices
+### Development Practices
 - **Jupyter Notebooks**: Interactive development and documentation
 - **Version Control**: Git workflow and collaborative development
 - **Code Generation**: Automated Python code synthesis
 - **Testing & Validation**: Syntax validation, error handling
 
-### 📊 Data & Storage
+### Data & Storage
 - **JSON Schema Design**: Blueprint structure and validation
 - **File System Management**: Persistent storage strategies
 - **SQLAlchemy**: (Optional) Database integration
 
-### 🔐 Security & Best Practices
+### Security & Best Practices
 - **API Key Management**: Secure credential handling
 - **Environment Variables**: Configuration separation
 - **Input Validation**: Sanitization and error checking
@@ -70,42 +70,42 @@
 
 ```
 INPUT: "Build me a shopping agent"
-  ↓
+ ↓
 CONSULTANT: Proposes options
-  ↓
+ ↓
 ARCHITECT: Designs blueprint with your approval
-  ↓
+ ↓
 BUILDER: Generates production Python code
-  ↓
+ ↓
 EXECUTOR: Runs your agent immediately
-  ↓
+ ↓
 OUTPUT: Ready-to-use agent system
 ```
 
-**Time to agent:** Minutes instead of days  
-**Code written by:** AI, not humans  
-**Quality assured by:** Human feedback loops  
+**Time to agent:** Minutes instead of days 
+**Code written by:** AI, not humans 
+**Quality assured by:** Human feedback loops 
 **Ready to deploy:** Instantly
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Building multi-agent systems is **complex, time-consuming, and error-prone**:
 
-- ❌ Requires deep knowledge of frameworks and APIs
-- ❌ Lots of boilerplate code to write and maintain
-- ❌ Changes mean rewriting entire systems
-- ❌ Hard to iterate and experiment with different architectures
+- Requires deep knowledge of frameworks and APIs
+- Lots of boilerplate code to write and maintain
+- Changes mean rewriting entire systems
+- Hard to iterate and experiment with different architectures
 
 **This system solves that by:**
 
-✅ Using AI agents to design and build other agents  
-✅ Automating code generation from simple descriptions  
-✅ Including human-in-the-loop verification  
-✅ Enabling rapid iteration and experimentation  
+ Using AI agents to design and build other agents 
+ Automating code generation from simple descriptions 
+ Including human-in-the-loop verification 
+ Enabling rapid iteration and experimentation 
 
 ---
 
-## 🎯 What This System Can Do
+## What This System Can Do
 
 ### Agent Generation Capabilities
 
@@ -123,7 +123,7 @@ This system can automatically generate AI agents for:
 - Social media content schedulers
 - Notification orchestrators
 
-**📊 Data & Analytics**
+** Data & Analytics**
 - Data processing pipelines
 - Report generation systems
 - Analytics dashboards coordinators
@@ -145,7 +145,7 @@ This system can automatically generate AI agents for:
 
 ---
 
-## 🏗️ How We Build It - The Architecture
+## How We Build It - The Architecture
 
 ### The Building Process
 
@@ -197,12 +197,12 @@ User Input: "I want a shopping agent that finds products and buys them"
 
 **Libraries Used:**
 ```python
-google-genai          # Gemini API client
-google-adk            # Agent Development Kit
-python-dotenv         # Environment configuration
-aiosqlite, asyncio    # Async support
-pydantic              # Data validation
-sqlalchemy            # Optional: for data persistence
+google-genai # Gemini API client
+google-adk # Agent Development Kit
+python-dotenv # Environment configuration
+aiosqlite, asyncio # Async support
+pydantic # Data validation
+sqlalchemy # Optional: for data persistence
 ```
 
 **Key Design Patterns:**
@@ -215,39 +215,39 @@ sqlalchemy            # Optional: for data persistence
 ### Why This Approach?
 
 **Why 3 Specialist Agents instead of 1 mega-agent?**
-- ✅ Each agent is expert in its domain (strategy, design, coding)
-- ✅ Better quality outputs through specialization
-- ✅ Easier to debug and improve each phase
-- ✅ Clearer feedback loops for human oversight
+- Each agent is expert in its domain (strategy, design, coding)
+- Better quality outputs through specialization
+- Easier to debug and improve each phase
+- Clearer feedback loops for human oversight
 
 **Why JSON Blueprints?**
-- ✅ Language-agnostic (can generate Python, JS, Go, etc.)
-- ✅ Easy to version control and track changes
-- ✅ Human-readable design documentation
-- ✅ Can be validated before code generation
+- Language-agnostic (can generate Python, JS, Go, etc.)
+- Easy to version control and track changes
+- Human-readable design documentation
+- Can be validated before code generation
 
 **Why Iterative Feedback Loop?**
-- ✅ User ensures design matches their intent
-- ✅ Catches problems before coding
-- ✅ Enables customization without code changes
-- ✅ Builds trust in AI-generated systems
+- User ensures design matches their intent
+- Catches problems before coding
+- Enables customization without code changes
+- Builds trust in AI-generated systems
 
 **Why Dynamic Execution?**
-- ✅ No kernel restart = fast iteration
-- ✅ Test changes instantly
-- ✅ Better developer experience
-- ✅ Enables live debugging
+- No kernel restart = fast iteration
+- Test changes instantly
+- Better developer experience
+- Enables live debugging
 
 **Why Google ADK?**
-- ✅ Production-ready framework
-- ✅ Type-safe agent definitions
-- ✅ Built-in tool handling
-- ✅ Support for both Sequential and Parallel flows
-- ✅ Active development and support
+- Production-ready framework
+- Type-safe agent definitions
+- Built-in tool handling
+- Support for both Sequential and Parallel flows
+- Active development and support
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 ```bash
@@ -259,7 +259,7 @@ pip install -r requirements.txt
 Create a `.env` file in the project root:
 ```bash
 GOOGLE_API_KEY=your_api_key_here
-GEMINI_MODEL=gemini-2.5-flash-lite  # or any other supported model
+GEMINI_MODEL=gemini-2.5-flash-lite # or any other supported model
 ```
 
 ### Run the System
@@ -274,8 +274,8 @@ jupyter notebook src/root.ipynb
 ```python
 # In the notebook, simply run:
 agent_id = await run_agent_factory(
-    user_initial_prompt="I want a shopping agent that finds products and buys them.",
-    agent_name_slug="personal_shopper"
+ user_initial_prompt="I want a shopping agent that finds products and buys them.",
+ agent_name_slug="personal_shopper"
 )
 
 # The system will:
@@ -291,66 +291,66 @@ agent_id = await run_agent_factory(
 
 ---
 
-## 🏗️ System Architecture Overview
+## System Architecture Overview
 
 The system consists of **5 key components** working in a 3-phase pipeline:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    PHASE 1: STRATEGY                    │
-│              CONSULTANT AGENT analyzes                  │
-│            user request & proposes solutions            │
+│ PHASE 1: STRATEGY │
+│ CONSULTANT AGENT analyzes │
+│ user request & proposes solutions │
 └────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
+ │
+ ▼
 ┌─────────────────────────────────────────────────────────┐
-│                    PHASE 2: DESIGN                      │
-│            ARCHITECT AGENT designs blueprints           │
-│         with iterative human feedback loops             │
+│ PHASE 2: DESIGN │
+│ ARCHITECT AGENT designs blueprints │
+│ with iterative human feedback loops │
 └────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
+ │
+ ▼
 ┌─────────────────────────────────────────────────────────┐
-│                    PHASE 3: BUILD                       │
-│          BUILDER AGENT generates Python code            │
-│            STORAGE MANAGER persists outputs             │
-│        DYNAMIC EXECUTOR runs the new agent              │
+│ PHASE 3: BUILD │
+│ BUILDER AGENT generates Python code │
+│ STORAGE MANAGER persists outputs │
+│ DYNAMIC EXECUTOR runs the new agent │
 └─────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ### Overview
 The system consists of **5 key components** working in a 3-phase pipeline:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    PHASE 1: STRATEGY                    │
-│              CONSULTANT AGENT analyzes                  │
-│            user request & proposes solutions            │
+│ PHASE 1: STRATEGY │
+│ CONSULTANT AGENT analyzes │
+│ user request & proposes solutions │
 └────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
+ │
+ ▼
 ┌─────────────────────────────────────────────────────────┐
-│                    PHASE 2: DESIGN                      │
-│            ARCHITECT AGENT designs blueprints           │
-│         with iterative human feedback loops             │
+│ PHASE 2: DESIGN │
+│ ARCHITECT AGENT designs blueprints │
+│ with iterative human feedback loops │
 └────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
+ │
+ ▼
 ┌─────────────────────────────────────────────────────────┐
-│                    PHASE 3: BUILD                       │
-│          BUILDER AGENT generates Python code            │
-│            STORAGE MANAGER persists outputs             │
-│        DYNAMIC EXECUTOR runs the new agent              │
+│ PHASE 3: BUILD │
+│ BUILDER AGENT generates Python code │
+│ STORAGE MANAGER persists outputs │
+│ DYNAMIC EXECUTOR runs the new agent │
 └─────────────────────────────────────────────────────────┘
 ```
 
 ### Components
 
-#### 1. **Consultant Agent** 🤔
+#### 1. **Consultant Agent** 
 **Role:** Strategy & Requirements Clarification
 
 - Takes vague user requests
@@ -370,7 +370,7 @@ Consultant proposes:
 User chooses: Option 2
 ```
 
-#### 2. **Architect Agent** 🏛️
+#### 2. **Architect Agent** 
 **Role:** System Blueprint Design
 
 - Receives refined requirements from Consultant
@@ -382,30 +382,30 @@ User chooses: Option 2
 **Blueprint structure:**
 ```json
 {
-  "system_name": "personal_shopper",
-  "description": "Finds products and completes purchases",
-  "flow_type": "Sequential",
-  "agents": [
-    {
-      "name": "SearchAgent",
-      "role": "Search for products matching criteria",
-      "tools": ["search"]
-    },
-    {
-      "name": "CartAgent",
-      "role": "Manage shopping cart",
-      "tools": ["add_to_cart", "remove_from_cart"]
-    },
-    {
-      "name": "CheckoutAgent",
-      "role": "Complete purchase",
-      "tools": ["checkout"]
-    }
-  ]
+ "system_name": "personal_shopper",
+ "description": "Finds products and completes purchases",
+ "flow_type": "Sequential",
+ "agents": [
+ {
+ "name": "SearchAgent",
+ "role": "Search for products matching criteria",
+ "tools": ["search"]
+ },
+ {
+ "name": "CartAgent",
+ "role": "Manage shopping cart",
+ "tools": ["add_to_cart", "remove_from_cart"]
+ },
+ {
+ "name": "CheckoutAgent",
+ "role": "Complete purchase",
+ "tools": ["checkout"]
+ }
+ ]
 }
 ```
 
-#### 3. **Builder Agent** 👷
+#### 3. **Builder Agent** 
 **Role:** Code Generation
 
 - Receives approved JSON blueprint
@@ -414,13 +414,13 @@ User chooses: Option 2
 - Validates all agent definitions
 
 **Enforces:**
-- ✅ Only approved imports from Google ADK
-- ✅ Proper agent configuration with model & tools
-- ✅ Valid JSON blueprint structure
-- ❌ No hardcoded secrets or API keys
-- ❌ No deprecated packages
+- Only approved imports from Google ADK
+- Proper agent configuration with model & tools
+- Valid JSON blueprint structure
+- No hardcoded secrets or API keys
+- No deprecated packages
 
-#### 4. **Storage Manager** 💾
+#### 4. **Storage Manager** 
 **Role:** Persistent Storage
 
 - Saves blueprints as JSON files
@@ -431,15 +431,15 @@ User chooses: Option 2
 ```
 agent_factory_storage/
 ├── personal_shopper/
-│   ├── blueprint.json    # System design
-│   └── agent.py          # Generated code
+│ ├── blueprint.json # System design
+│ └── agent.py # Generated code
 ├── email_assistant/
-│   ├── blueprint.json
-│   └── agent.py
+│ ├── blueprint.json
+│ └── agent.py
 └── ...
 ```
 
-#### 5. **Dynamic Executor** ⚡
+#### 5. **Dynamic Executor** 
 **Role:** Runtime Execution
 
 - Dynamically loads generated `.py` files using `importlib`
@@ -448,46 +448,46 @@ agent_factory_storage/
 
 ---
 
-## 📊 Data Flow
+## Data Flow
 
 ### End-to-End Workflow
 
 ```
 1. USER INPUT
-   ↓
-   "I want a shopping agent"
-   
+ ↓
+ "I want a shopping agent"
+ 
 2. CONSULTANT PHASE
-   ├─ Receives: User prompt
-   ├─ Outputs: 2-3 options
-   └─ Result: User selects Option 2
-   
+ ├─ Receives: User prompt
+ ├─ Outputs: 2-3 options
+ └─ Result: User selects Option 2
+ 
 3. ARCHITECT PHASE
-   ├─ Loop:
-   │  ├─ Design blueprint
-   │  ├─ Show to user
-   │  ├─ Get feedback
-   │  └─ Refine or approve
-   └─ Result: Final JSON blueprint
-   
+ ├─ Loop:
+ │ ├─ Design blueprint
+ │ ├─ Show to user
+ │ ├─ Get feedback
+ │ └─ Refine or approve
+ └─ Result: Final JSON blueprint
+ 
 4. BUILDER PHASE
-   ├─ Receives: Blueprint JSON
-   ├─ Generates: Python code
-   └─ Result: Executable agent
-   
+ ├─ Receives: Blueprint JSON
+ ├─ Generates: Python code
+ └─ Result: Executable agent
+ 
 5. STORAGE PHASE
-   ├─ Saves: blueprint.json
-   └─ Saves: agent.py
-   
+ ├─ Saves: blueprint.json
+ └─ Saves: agent.py
+ 
 6. EXECUTION PHASE
-   ├─ Loads: Generated agent
-   ├─ Runs: With user query
-   └─ Result: Agent output
+ ├─ Loads: Generated agent
+ ├─ Runs: With user query
+ └─ Result: Agent output
 ```
 
 ---
 
-## 🎮 Usage Examples
+## Usage Examples
 
 ### Example 1: Build a Price Comparison Agent
 
@@ -534,12 +534,12 @@ Agent is redeployed instantly
 
 ```bash
 # API Configuration
-GOOGLE_API_KEY=your_api_key_here        # Required
-GEMINI_MODEL=gemini-2.5-flash-lite      # Model to use
+GOOGLE_API_KEY=your_api_key_here # Required
+GEMINI_MODEL=gemini-2.5-flash-lite # Model to use
 
 # Optional
-FACTORY_STORAGE_PATH=agent_factory_storage  # Where to save agents
-LOG_LEVEL=INFO                              # Logging level
+FACTORY_STORAGE_PATH=agent_factory_storage # Where to save agents
+LOG_LEVEL=INFO # Logging level
 ```
 
 ### Changing Models
@@ -560,31 +560,31 @@ GEMINI_MODEL=gemini-1.5-pro
 
 ```
 the-meta-agent-system/
-├── README.md                          # This file
-├── requirements.txt                   # Python dependencies
-├── .env                              # Configuration (not in git)
+├── README.md # This file
+├── requirements.txt # Python dependencies
+├── .env # Configuration (not in git)
 │
 ├── src/
-│   └── root.ipynb                    # Main Jupyter notebook
-│       ├── Cell 1: Environment verification
-│       ├── Cell 2: Architecture overview + diagrams
-│       ├── Cell 3: Core setup & configuration
-│       ├── Cell 4: Storage Manager
-│       ├── Cell 5: Architect Agent
-│       ├── Cell 6: Consultant Agent
-│       ├── Cell 7: Builder Agent
-│       ├── Cell 8: Orchestrator
-│       ├── Cell 9: Dynamic Executor
-│       └── Cell 10: Run Factory + Quick Reference
+│ └── root.ipynb # Main Jupyter notebook
+│ ├── Cell 1: Environment verification
+│ ├── Cell 2: Architecture overview + diagrams
+│ ├── Cell 3: Core setup & configuration
+│ ├── Cell 4: Storage Manager
+│ ├── Cell 5: Architect Agent
+│ ├── Cell 6: Consultant Agent
+│ ├── Cell 7: Builder Agent
+│ ├── Cell 8: Orchestrator
+│ ├── Cell 9: Dynamic Executor
+│ └── Cell 10: Run Factory + Quick Reference
 │
-├── agent_factory_storage/             # Generated agents (created at runtime)
-│   ├── personal_shopper/
-│   │   ├── blueprint.json
-│   │   └── agent.py
-│   └── ...
+├── agent_factory_storage/ # Generated agents (created at runtime)
+│ ├── personal_shopper/
+│ │ ├── blueprint.json
+│ │ └── agent.py
+│ └── ...
 │
-├── info.md                           # Additional documentation
-└── LICENSE                           # MIT License
+├── info.md # Additional documentation
+└── LICENSE # MIT License
 ```
 
 ---
@@ -613,7 +613,7 @@ This project includes **two complete implementations** of the same meta-agent fa
 
 **📖 [View Detailed Documentation →](./docs/GOOGLE_ADK_VERSION.md)**
 
-### 🔗 [LangChain Version](./docs/LANGCHAIN_VERSION.md)
+### [LangChain Version](./docs/LANGCHAIN_VERSION.md)
 **File:** `src/root_LangChain_version.ipynb`
 
 **Features:**
@@ -640,12 +640,12 @@ Edit agent instructions in the notebook:
 
 ```python
 consultant_agent = Agent(
-    name="Consultant",
-    model=get_gemini_model(),
-    instruction="""
-    You are an AI Solutions Consultant.
-    [CUSTOMIZE THIS PROMPT]
-    """
+ name="Consultant",
+ model=get_gemini_model(),
+ instruction="""
+ You are an AI Solutions Consultant.
+ [CUSTOMIZE THIS PROMPT]
+ """
 )
 ```
 
@@ -654,8 +654,8 @@ consultant_agent = Agent(
 ```python
 # Define tool function
 def custom_search(query: str) -> str:
-    """Search for something custom."""
-    return f"Results for {query}"
+ """Search for something custom."""
+ return f"Results for {query}"
 
 # Add to Builder's instructions
 builder_agent.instruction += """
@@ -711,30 +711,30 @@ When you build an agent with this system, you receive:
 ### Generated Files
 ```
 agent_factory_storage/your_agent_name/
-├── blueprint.json         # System design document
-│   └── Contains: agents, tools, flow type, configuration
-└── agent.py              # Production Python code
-    └── Contains: Agent classes, tools, main execution logic
+├── blueprint.json # System design document
+│ └── Contains: agents, tools, flow type, configuration
+└── agent.py # Production Python code
+ └── Contains: Agent classes, tools, main execution logic
 ```
 
 ### The Agent
-- ✅ **Fully functional** - Ready to use immediately
-- ✅ **Type-safe** - Pydantic models for all inputs/outputs
-- ✅ **Well-structured** - Clear separation of concerns
-- ✅ **Documented** - Instructions on what each agent does
-- ✅ **Tested** - Verified by the Builder agent
-- ✅ **Modular** - Easy to extend with custom tools
+- **Fully functional** - Ready to use immediately
+- **Type-safe** - Pydantic models for all inputs/outputs
+- **Well-structured** - Clear separation of concerns
+- **Documented** - Instructions on what each agent does
+- **Tested** - Verified by the Builder agent
+- **Modular** - Easy to extend with custom tools
 
 ### Development Experience
-- ✅ **Fast iteration** - Changes in minutes, not hours
-- ✅ **Human oversight** - You approve each step
-- ✅ **Clear documentation** - Blueprint explains the design
-- ✅ **Easy debugging** - Each agent's instructions visible
-- ✅ **Version tracking** - Blueprint history in JSON
+- **Fast iteration** - Changes in minutes, not hours
+- **Human oversight** - You approve each step
+- **Clear documentation** - Blueprint explains the design
+- **Easy debugging** - Each agent's instructions visible
+- **Version tracking** - Blueprint history in JSON
 
 ---
 
-## 🎯 Real-World Comparison
+## Real-World Comparison
 
 ### Traditional Approach (Without This System)
 ```
@@ -788,7 +788,7 @@ Total: 5-10 minutes per agent
 
 ---
 
-## 📈 Future Enhancements
+## Future Enhancements
 
 - [ ] Export agents as Docker containers
 - [ ] Multi-language code generation (Python, JavaScript, Go)
@@ -818,11 +818,11 @@ Total: 5-10 minutes per agent
 
 ### Project-Specific Documentation
 - [🔵 Google ADK Version - Detailed Implementation Guide](./docs/GOOGLE_ADK_VERSION.md)
-- [🔗 LangChain Version - Detailed Implementation Guide](./docs/LANGCHAIN_VERSION.md)
+- [ LangChain Version - Detailed Implementation Guide](./docs/LANGCHAIN_VERSION.md)
 
 ---
 
-## 📝 License
+## License
 
 MIT License - See [LICENSE](LICENSE) file for details
 
@@ -842,19 +842,19 @@ Contributions welcome! Areas for improvement:
 
 ## ❓ FAQ
 
-**Q: Can I use this with other LLMs?**  
+**Q: Can I use this with other LLMs?** 
 A: Currently supports Google Gemini. Adding support for other models is planned.
 
-**Q: What if the generated code doesn't work?**  
+**Q: What if the generated code doesn't work?** 
 A: Architect can be asked to regenerate with feedback, or you can manually fix and re-run.
 
-**Q: How are agents stored?**  
+**Q: How are agents stored?** 
 A: Blueprints saved as JSON, code saved as Python files in `agent_factory_storage/`
 
-**Q: Can I modify generated agents?**  
+**Q: Can I modify generated agents?** 
 A: Yes! Edit the `.py` files directly or use the factory to regenerate with changes.
 
-**Q: Is this production-ready?**  
+**Q: Is this production-ready?** 
 A: Great for prototyping and iteration. Production use requires additional testing & validation.
 
 ---
